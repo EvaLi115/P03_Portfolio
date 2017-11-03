@@ -43,6 +43,10 @@ hr.subsection_divide {
   border-bottom: 1px dashed;
   margin: 3em 0;
 }
+
+img {
+  width: 100%;
+}
 /*
 ------------------------------------------------------------------------- Navigation Style
 */
@@ -205,6 +209,29 @@ button {
 .button_fill:hover, .button_fill:focus, .button_unfill:hover, .button_unfill:focus  {
   background-color: #12667C;
   color: #FFF;
+}
+
+
+/*image*/
+.full_length {
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+
+.image_header {
+  height: 40vh;
+}
+
+.item_on_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  
+  background-color: #D3D3D3;
+  padding: 0.5em;
 }
 
 /*
