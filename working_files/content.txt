@@ -1,0 +1,72 @@
+Bio:
+
+I am a programmer who is passionate about programming with interactive systems, especially for both web and mobile. While completing my Bachelor of Science degree in the School of Interactive Art and Technology (SIAT) at SFU, I learnt various coding languages (such as C, C Sharp, Java and HTML), user-centred design processes, and different prototyping software (such as Axure, InVision, and Proto.io). With these pieces of knowledge, I was able to complete some team projects focusing on user-centred visual and experience design.  (82 words)
+
+________________________________________________________________
+
+
+Project 1 Process Analysis: Panwiberry Dance Crew
+
+
+
+Project brief
+
+In this project, we were tasked to find a group that have weekly scheduled meetings, and then come up with a technology prototype solution to improve their cooperation. The group we chose was a K-Pop dancing crew in SFU. During this period of time, we have to closely observe the members of the group get to know them and conduct various interviews and questionnaires to examine if there are any problems within the group that slows down the group's effectiveness and work on a design focus based on research. (89)
+
+
+Participant Ethnography Data Collection
+
+I studied the members within the group's weekly practice meeting for 5 hours. This includes the group's culture, their values towards the group, their behaviours around each other, and the kind of language and tone used in the activity. In order to find the data, I closely observed the members in person by taking photography and video recording, and then interviewed them about their status in the club and their thoughts in the activity. These data are then used to develop a design focus and a thematic analysis for the group. (91)
+
+
+
+Personas
+
+From the data collected and the analysis about the participant group's behaviours and activities, three personas are been formed to represent the participants to express our understanding of the group. It also helps to further develop solutions for the problem found. (41)
+
+
+
+Cultural Probe
+
+I designed a set of booklet specifically for each participant to complete individually within a week. These customized booklets contain questions asking about their personal values toward the group, their personality, daily behaviour patterns, and motivation. The goal is to better engage and develop a better relationship between our research group and the participants. The result is then used to refine design focus. (63)
+
+
+
+Journey Frameworks
+
+By studying and analysing, our research group come up with 2 concepts to solve a serious of problems we found within the participant group. Each concept has an in-depth of journey framework from 3 perspectives of 3 different roles in the group, explaining how the participants would use the design and their possible feelings during the action. (57)
+
+
+
+Final Result
+
+
+________________________________________________________________
+
+
+
+Project 2 Process Analysis: Duet
+
+
+Research and Proposals
+
+Our task is to research and find a domain to come up with 3 initial ideas for an interactive system that we believe would be meaningful to work on. To start this off, we wrote our individual interest of topics on the sticky notes and used it to form an affinity diagram. After brainstorming and discussing, we decided to design a social networking app for couples only. The main goal of the app is to help long-distance couples to manage, maintain and improve their relationship for situations like loneliness, arguments and bonding. And at the same time, making a timeline of their life events. (104)
+
+
+
+Idea and Interaction Framework
+
+For this stage, we were able to find 9 pairs of couples that are either in a long-distance relationship or has experienced it to participate in our research, having the users to help us to refine our design focus. I have helped to complete the questionnaire for interviewing the couples and conducted 2 interviews. From the interviews, we used the analysis to refine the features in the app and worked through how the couples would act in their situation into user journey map to show their action and feeling during the action. (92)
+
+
+Prototyping the Interaction
+
+From what we established for the style guide and the pattern guide elements, we generated a detailed set of sketches for each feature/page in the app. I then used InVision to prototype all the pages from the detailed sketches and connected the pages to make it interactive. (47)
+
+Prototype link: https://invis.io/NPCBASAUJ#/244128132_Home_Page
+
+
+
+Final Result
+
+In order to get a better user experience, I switched all previous prototype pages from InVision to Proto.io. After I update the prototype in Proto.io, we asked the couples to try out the prototype, and asked for feedback, to check if our design solution can actually help them to achieve their goals. Using the feedbacks, I continued on fixing the interactions in the prototype. (64)
