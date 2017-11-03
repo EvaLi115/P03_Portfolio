@@ -1,0 +1,242 @@
+/*clear floats for style of grids*/
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+/*
+------------------------------------------------------------------------- General styling
+*/
+body {
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+  color: #484848;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, a {
+  font-weight: 600;
+  outline: 0;
+}
+
+h1 {
+  line-height: 1.6em;
+}
+
+h4{
+  font-weight: 500;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+hr.section_divide {
+  margin: 3em 0;
+}
+
+hr.subsection_divide {
+  border-top: none;
+  border-bottom: 1px dashed;
+  margin: 3em 0;
+}
+/*
+------------------------------------------------------------------------- Navigation Style
+*/
+header {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 63px;
+  z-index: 1000;
+  padding: 0 2%;
+	background: #6AC0F2;
+  background: linear-gradient(to top left, #9CCAD6 25%, #12667C);
+	overflow: hidden;
+	transition: background-color  0.5s ease;
+}
+
+.nav_container a {
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+  line-height: 60px;
+  font-size: 0.95em;
+  margin: 0 1.25em;
+  color: #EFEFEF;
+  transition: color  0.5s ease;
+}
+
+.nav_container a:hover, .nav_container a:focus {
+  color: #FFF;
+  border-bottom: 3px solid #F2F2F2;
+}
+
+.nav_container a.float_left h1 {
+  margin: 0;
+  line-height: 60px;
+  color: #FFF;
+}
+
+.nav_container a.current_page{
+  color: #FFF;
+  border-bottom: 3px solid #F2F2F2;
+}
+/*
+------------------------------------------------------------------------- Navigation Style END HERE
+*/
+
+
+
+
+/*
+------------------------------------------------------------------------- Sub-navigation Style
+*/
+.sub-nav {
+  position: fixed;
+  width: 100%;
+  top:60px;
+  padding: 0 2%;
+  text-align: right;
+  background-color: #F2F2F2;
+  z-index: 800;
+}
+
+.sub-nav ul {
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+.sub-nav li {
+  display: inline-block;
+}
+
+.sub-nav li a {
+  text-decoration: none;
+  color: #9B9B9B;
+  margin: 0 1.25em;
+  font-size: 0.85em;
+  font-weight: 400;
+  transition: color  0.5s ease;
+}
+
+.sub-nav li a:hover, .sub-nav li a:focus {
+  color: #12667C;
+}
+/*
+------------------------------------------------------------------------- Sub-navigation Style END HERE
+*/
+
+
+
+/*
+------------------------------------------------------------------------- Body Content Style
+*/
+.body_container {
+  margin: 110px 15% 3em;
+}
+
+.page_Heading {
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+.body_container section {
+  padding: 0 1em;
+}
+
+code {
+  display: block;
+  line-height: 2em;
+  padding: 1.25em;
+  margin-bottom: 1em;
+  background-color: #FDFEFF;
+  border: 0.1em solid #9CCAD6;
+  border-left-width: thick;
+}
+
+
+/*inText_Link*/
+.inText_Link {
+  color: #6AC0F2;
+  transition: color  0.5s ease;
+}
+
+.inText_Link:hover, .inText_Link:focus {
+  color: #12667C;
+}
+
+/*main navigation in styleguide*/
+.nav_container_styleguide {
+  width: 100%;
+  height: 63px;
+  z-index: 1000;
+  padding: 0 2%;
+  background: #6AC0F2;
+  background: linear-gradient(to top left, #9CCAD6 25%, #12667C);
+  overflow: hidden;
+  transition: background-color  0.5s ease;
+}
+
+/*button*/
+button {
+  border: 1px solid #9CCAD6;
+  padding: 1em 3em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.5s, background-color 0.5s, ease;
+}
+
+.button_fill {
+  background-color: #9CCAD6;
+  color: #FFF;
+}
+
+.button_unfill {
+  background-color: #FFF;
+  color: #9CCAD6;
+}
+
+.button_fill:hover, .button_fill:focus, .button_unfill:hover, .button_unfill:focus  {
+  background-color: #12667C;
+  color: #FFF;
+}
+
+/*
+------------------------------------------------------------------------- Body Content Style END HERE
+*/
+
+
+
+
+/*
+------------------------------------------------------------------------- Color Palette Style
+*/
+.color_item {
+  color: #FFF;
+  padding: 20px 30px;
+}
+
+.color_1 {
+  background: #484848;
+}
+
+.color_2 {
+  background: #12667C;
+}
+
+.color_3 {
+  background: #6AC0F2;
+}
+
+.color_4 {
+  background: #9CCAD6;
+}
+/*
+------------------------------------------------------------------------- Color Palette Style END HERE
+*/

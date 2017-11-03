@@ -30,6 +30,7 @@
     </header>
     <!-- Header END HERE -->
 
+    <!-- Sub-navigation -->
     <section class="sub-nav">
       <ul>
         <li><a href="#colorPaletteSection">Color Palette</a></li>
@@ -39,6 +40,7 @@
         <li><a href="#imageSection">Images</a></li>
       </ul>
     </section>
+    <!-- Sub-navigation END HERE -->
 
     <!-- Body Content -->
     <section class="body_container">
@@ -54,40 +56,63 @@
           <h3>Colors</h3>
 
           <h4>CSS Selector:</h4>
-          <p></p>
+          <p>.responsive_box | .color_item | color_1 | span</p>
 
           <h4>Sample Code:</h4>
           <code>
+            &lt;div class="responsive_box"&gt; <br>
+              &nbsp; &nbsp; &lt;div class="color_item color_1"&gt; <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &lt;span>#484848&lt;/span&gt; <br>
+              &nbsp; &nbsp; &lt;/div&gt; <br>
+            &lt;/div&gt;
           </code>
 
           <h4>Rendered Element:</h4>
+          <div class="responsive_box">
+            <!-- 1 -->
+            <div class="color_item color_1">
+              <span>#484848</span>
+            </div>
+            <!-- 2 -->
+            <div class="color_item color_2">
+              <span>#12667C</span>
+            </div>
+            <!-- 3 -->
+            <div class="color_item color_3">
+              <span>#6AC0F2</span>
+            </div>
+            <!-- 4 -->
+            <div class="color_item color_4">
+              <span>#9CCAD6</span>
+            </div>
+          </div>
         </section>
 
-        <hr class="subsection_divide">
+        <!-- <hr class="subsection_divide"> -->
 
         <!-- Primary Colors -->
-        <section>
+        <!-- <section>
           <h3>Primary Colors</h3>
 
-        </section>
+        </section> -->
         <!-- Primary Colors END HERE -->
 
-        <hr class="subsection_divide">
+        <!-- <hr class="subsection_divide"> -->
 
         <!-- Secondary Colors -->
-        <section>
+        <!-- <section>
           <h3>Secondary Colors</h3>
 
-        </section>
+        </section> -->
         <!-- Secondary Colors END HERE -->
 
-        <hr class="subsection_divide">
+        <!-- <hr class="subsection_divide"> -->
 
         <!-- Background Colors -->
-        <section>
+        <!-- <section>
           <h3>Background Colors</h3>
 
-        </section>
+        </section> -->
         <!-- Background Colors END HERE -->
       </section>
       <!-- Color Palette END HERE -->
@@ -95,11 +120,11 @@
       <hr class="section_divide">
 
       <!-- Grid Structure -->
-      <section id="gridSection">
-        <h2>Grid Structure</h2>
+      <!-- <section id="gridSection">
+        <h2>Grid Structure</h2> -->
 
         <!-- Grids -->
-        <section>
+        <!-- <section>
           <h3>Grids</h3>
 
           <h4>CSS Selector:</h4>
@@ -112,10 +137,10 @@
           <h4>Rendered Element:</h4>
         </section>
 
-        <hr class="subsection_divide">
+        <hr class="subsection_divide"> -->
 
         <!-- Grid Sizes -->
-        <section>
+        <!-- <section>
           <h3>Grid 1 of 1</h3>
 
         </section>
@@ -125,12 +150,12 @@
         <section>
           <h3>Grid 1 of 3</h3>
 
-        </section>
+        </section> -->
         <!-- Grid Sizes END HERE -->
-      </section>
+      <!-- </section> -->
       <!-- Grid Structure END HERE -->
 
-      <hr class="subsection_divide">
+      <!-- <hr class="section_divide"> -->
 
       <!-- Typography -->
       <section id="typographySection">
@@ -149,7 +174,7 @@
           </code>
 
           <h4>Rendered Element:</h4>
-          <h1>H1: Main Heading</h1>
+          <h1 class="page_Heading">H1: Main Heading</h1>
           <h2>H2: Page Title</h2>
           <h3>H3: Section Heading</h3>
           <h4>H4: Sub-section Heading</h4>
@@ -232,19 +257,19 @@
 
           <h4>Sample Code:</h4>
           <code>
-            &lt;ul class="numbered-list"&gt; <br>
+            &lt;ol class="numbered-list"&gt; <br>
             &nbsp; &nbsp; &lt;li&gt;numbered list&lt;/li&gt; <br>
             &nbsp; &nbsp; &lt;li&gt;numbered list&lt;/li&gt; <br>
             &nbsp; &nbsp; &lt;li&gt;numbered list&lt;/li&gt; <br>
-            &lt;/ul&gt;
+            &lt;/ol&gt;
           </code>
 
           <h4>Rendered Element:</h4>
-          <ul class="numbered_list">
+          <ol class="numbered_list">
             <li>numbered list</li>
             <li>numbered list</li>
             <li>numbered list</li>
-          </ul>
+          </ol>
         </section>
         <!-- Numbered List END HERE -->
       </section>
@@ -271,7 +296,7 @@
           </code>
 
           <h4>Rendered Element:</h4>
-          <nav class="nav_container">
+          <nav class="nav_container nav_container_styleguide">
             <a href="" class="current_page">Current Page</a>
             <a href="">Page 1</a>
             <a href="">Page 2</a>
@@ -309,7 +334,7 @@
         <h2>Images</h2>
 
         <!-- Image Header -->
-        <section>
+        <!-- <section>
           <h3>Image Header</h3>
 
           <h4>CSS Selector:</h4>
@@ -320,10 +345,10 @@
           </code>
 
           <h4>Rendered Element:</h4>
-        </section>
+        </section> -->
         <!-- Image Header END HERE -->
 
-        <hr class="subsection_divide">
+        <!-- <hr class="subsection_divide"> -->
 
         <!-- Image With Caption-->
         <section>
@@ -340,10 +365,10 @@
         </section>
         <!-- Image With Caption END HERE -->
 
-        <hr class="subsection_divide">
+        <!-- <hr class="subsection_divide"> -->
 
         <!-- Image Slideshow With Caption-->
-        <section>
+        <!-- <section>
           <h3>Image Slideshow With Caption</h3>
 
           <h4>CSS Selector:</h4>
@@ -354,7 +379,7 @@
           </code>
 
           <h4>Rendered Element:</h4>
-        </section>
+        </section> -->
         <!-- Image Slideshow With Caption END HERE -->
       </section>
       <!-- Images & Media END HERE -->
