@@ -44,9 +44,21 @@ hr.subsection_divide {
   margin: 3em 0;
 }
 
+figure {
+  margin: 2.5em 5em 5em;
+}
+
 img {
   width: 100%;
+  height: auto;
+  border: 1px solid #F2F2F2;
 }
+
+figcaption {
+  font-size: 0.85em;
+}
+
+
 /*
 ------------------------------------------------------------------------- Navigation Style
 */
@@ -229,7 +241,7 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.5em;
-  
+
   background-color: #D3D3D3;
   padding: 0.5em;
 }
