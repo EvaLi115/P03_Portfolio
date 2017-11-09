@@ -67,12 +67,12 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 63px;
+  height: 80px;
   z-index: 1000;
-  padding: 0 2%;
-	background: #6AC0F2;
-  background: linear-gradient(to top left, #9CCAD6 25%, #12667C);
+  padding: 0 10em;
+	background: #FFF;
 	overflow: hidden;
+	box-shadow: 0 2px 5px #CCC;
 	transition: background-color  0.5s ease;
 }
 
@@ -95,12 +95,12 @@ header {
 .nav_container a.float_left h1 {
   margin: 0;
   line-height: 60px;
-  color: #FFF;
+  color: #6AC0F2;
 }
 
 .nav_container a.current_page{
-  color: #FFF;
-  border-bottom: 3px solid #F2F2F2;
+  color: #6AC0F2;
+  border-bottom: 3px solid #6AC0F2;
 }
 /*
 ------------------------------------------------------------------------- Navigation Style END HERE
@@ -153,7 +153,7 @@ header {
 ------------------------------------------------------------------------- Body Content Style
 */
 .body_container {
-  margin: 110px 15% 3em;
+	margin: 0 10em;
 }
 
 .page_Heading {
@@ -162,7 +162,7 @@ header {
 }
 
 .body_container section {
-  padding: 0 1em;
+	padding-top: 90px;
 }
 
 code {
@@ -193,7 +193,7 @@ code {
   z-index: 1000;
   padding: 0 2%;
   background: #6AC0F2;
-  background: linear-gradient(to top left, #9CCAD6 25%, #12667C);
+  /*background: linear-gradient(to top left, #9CCAD6 25%, #12667C);*/
   overflow: hidden;
   transition: background-color  0.5s ease;
 }
@@ -279,3 +279,19 @@ button {
 /*
 ------------------------------------------------------------------------- Color Palette Style END HERE
 */
+
+
+
+
+.big_image_header {
+	height: 91.25vh;
+}
+
+.background_image {
+	height: 100%;
+	background-image: url("../img/placeholder.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
