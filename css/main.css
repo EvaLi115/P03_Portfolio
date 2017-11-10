@@ -239,7 +239,7 @@ code {
 button, .button {
   border: 1px solid #FFF;
   padding: 1em 3em;
-	margin: 2em 0;
+	margin: 3em 0;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -343,13 +343,21 @@ button, .button {
 	position: absolute;
 	right: 50%;
 	top: 30%;
-	transform: translate(50%, 50%);
+	transform: translate(50%, 30%);
 	color: #FFFFFF;
+	width: 60%;
+	margin: auto;
 }
 
 .cover_title {
 	font-size: 5em;
 	margin: 0;
+	line-height: normal;
+}
+
+.cover_info {
+	font-size: 1em;
+	line-height: normal;
 }
 /*
 ------------------------------------------------------------------------- Page Cover Style END HERE
