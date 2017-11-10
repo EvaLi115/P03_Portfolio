@@ -1,6 +1,6 @@
 Bio:
 
-I am a programmer who is passionate about programming with interactive systems, especially for both web and mobile. While completing my Bachelor of Science degree in the School of Interactive Art and Technology (SIAT) at SFU, I learnt various coding languages (such as C, C Sharp, Java and HTML), user-centred design processes, and different prototyping software (such as Axure, InVision, and Proto.io). With these pieces of knowledge, I was able to complete some team projects focusing on user-centred visual and experience design.  (82 words)
+I am a UX designer who is also passionate about UI design and web design, and I am currently studying in the School of Interactive Art and Technology (SIAT) at SFU completing my Bachelor of Science degree. I discovered my interest in user-centred experience and interface design for interactive technologies when I enrolled in two courses that required real research participants for user data collection. This allowed me to gain real experience working with the users to study their behaviour and culture, and come up with technological solutions that they preferred to use to solve the problems concerning them. (100 words)
 
 ________________________________________________________________
 
