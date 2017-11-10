@@ -50,7 +50,6 @@ hr.subsection_divide {
 }
 
 figure {
-  /*margin: 2.5em 5em 5em;*/
 	margin: 0;
 }
 
@@ -84,33 +83,40 @@ header {
 .nav_container {
 	width: 60%;
 	margin: auto;
+	line-height: 75px;
 }
 
 .nav_container a {
 	text-decoration: none;
 	display: inline-block;
 	text-align: center;
-  line-height: 60px;
+  line-height: 50px;
   font-size: 0.95em;
-  margin: 0 1.25em;
+  margin-left: 2em;
   color: #EFEFEF;
   transition: color  0.5s ease;
+	font-weight: 400;
 }
 
 .nav_container a:hover, .nav_container a:focus {
-  color: #FFF;
-  border-bottom: 3px solid #F2F2F2;
+  color: #82BAC7;
+}
+
+.nav_container a.float_left {
+	margin-left: 0;
+	margin-right: 2em;
 }
 
 .nav_container a.float_left h1 {
   margin: 0;
-  line-height: 60px;
-  color: #6AC0F2;
+  line-height: 80px;
+  color: #837678;
 }
 
 .nav_container a.current_page{
-  color: #6AC0F2;
-  border-bottom: 3px solid #6AC0F2;
+  color: #82BAC7;
+  border-bottom: 3px solid #82BAC7;
+	font-weight: 600;
 }
 /*
 ------------------------------------------------------------------------- Navigation Style END HERE
@@ -162,9 +168,19 @@ header {
 /*
 ------------------------------------------------------------------------- Body Content Style
 */
-.body_container {
-	width: 60%;
-	margin: auto;
+.body_container .white {
+	background: #FFFFFF;
+}
+
+.light {
+	background: #F9F9F9;
+	border-top: 1px solid #F5F5F5;
+}
+
+.dark {
+	/*background: #4d414f;*/
+	background: #23232D;
+	color: #FFFFFF;
 }
 
 .page_Heading {
@@ -173,8 +189,9 @@ header {
 }
 
 .body_container section {
-	padding-top: 90px;
-	margin: 0 1.25em;
+	width: 60%;
+	margin: auto;
+	padding: 90px 0;
 }
 
 code {
@@ -187,10 +204,9 @@ code {
   border-left-width: thick;
 }
 
-
 /*inText_Link*/
 .inText_Link {
-  color: #6AC0F2;
+  color: #82BAC7;
   transition: color  0.5s ease;
 }
 
@@ -204,7 +220,7 @@ code {
   height: 63px;
   z-index: 1000;
   padding: 0 2%;
-  background: #6AC0F2;
+  background: #82BAC7;
   /*background: linear-gradient(to top left, #9CCAD6 25%, #12667C);*/
   overflow: hidden;
   transition: background-color  0.5s ease;
@@ -282,7 +298,7 @@ button {
 }
 
 .color_3 {
-  background: #6AC0F2;
+  background: #82BAC7;
 }
 
 .color_4 {
@@ -295,6 +311,9 @@ button {
 
 
 
+/*
+------------------------------------------------------------------------- Page Cover Style
+*/
 .big_image_header {
 	height: 91.25vh;
 	position: relative;
@@ -319,20 +338,48 @@ button {
 .cover_title {
 	font-size: 3em;
 }
+/*
+------------------------------------------------------------------------- Page Cover Style END HERE
+*/
 
+
+
+
+/*
+------------------------------------------------------------------------- Project List Style
+*/
+#about p {
+	margin-top: 3em;
+}
+
+.overlay_container img {
+	opacity: 1;
+	transition: opacity 0.5s ease;
+}
+
+.overlay_container img:hover, .overlay_container img:focus {
+	opacity: 0.8;
+}
 
 .project_item {
 	display: inline-block;
 	max-width: 48%;
 	margin: 3em 0.1em;
-	background-color: #ffffff;
 }
 
 .project_title a, .project_info a {
 	color: inherit;
 	text-decoration: none;
+	transition: color 0.5s ease;
 }
 
 .project_info a {
 	font-size: 0.8em;
 }
+
+.project_item a:hover, .project_item a:focus{
+	color: #82BAC7;
+}
+/*
+------------------------------------------------------------------------- Project List Style END HERE
+*/
