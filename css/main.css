@@ -59,7 +59,7 @@ hr.subsection_divide {
 }
 
 figure {
-	margin: 0;
+	margin: 0 0 3em;
 }
 
 img {
@@ -330,13 +330,24 @@ button, .button {
 	background: linear-gradient(to right bottom, #E986F9 30%, #1DD9E5);
 }
 
+#panwiberry.big_image_header {
+	height: 400px;
+}
+
 .background_image {
 	height: 100%;
-	background-image: url("../img/about.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+}
+
+.about_cover {
+	background-image: url("../img/about.png");
+}
+
+.panwiberry_cover {
+	background-image: url("../img/panwiberry/panwiberry_cover.png");
 }
 
 .cover_text {
@@ -369,7 +380,7 @@ button, .button {
 /*
 ------------------------------------------------------------------------- Project List Style
 */
-#about p {
+.first_piece_content div {
 	margin-top: 3em;
 }
 
