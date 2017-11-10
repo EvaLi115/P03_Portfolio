@@ -22,8 +22,17 @@ h1 {
   line-height: 1.6em;
 }
 
+h2 {
+	font-size: 2.25em;
+}
+
 h4{
   font-weight: 500;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.75em;
 }
 
 .float_left {
@@ -93,7 +102,7 @@ header {
   line-height: 50px;
   font-size: 0.95em;
   margin-left: 2em;
-  color: #EFEFEF;
+  color: #9B9B9B;
   transition: color  0.5s ease;
 	font-weight: 400;
 }
@@ -110,7 +119,7 @@ header {
 .nav_container a.float_left h1 {
   margin: 0;
   line-height: 80px;
-  color: #837678;
+  color: #A849B7;
 }
 
 .nav_container a.current_page{
@@ -227,9 +236,10 @@ code {
 }
 
 /*button*/
-button {
-  border: 1px solid #9CCAD6;
+button, .button {
+  border: 1px solid #FFF;
   padding: 1em 3em;
+	margin: 2em 0;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -237,18 +247,18 @@ button {
 }
 
 .button_fill {
-  background-color: #9CCAD6;
+  background-color: #82BAC7;
   color: #FFF;
 }
 
 .button_unfill {
-  background-color: #FFF;
-  color: #9CCAD6;
+  background-color: transparent;
+  color: #FFF;
 }
 
 .button_fill:hover, .button_fill:focus, .button_unfill:hover, .button_unfill:focus  {
-  background-color: #12667C;
-  color: #FFF;
+  background-color: #FFF;
+  color: #82BAC7;
 }
 
 
@@ -315,13 +325,14 @@ button {
 ------------------------------------------------------------------------- Page Cover Style
 */
 .big_image_header {
-	height: 91.25vh;
+	height: 600px;
 	position: relative;
+	background: linear-gradient(to right bottom, #E986F9 30%, #1DD9E5);
 }
 
 .background_image {
 	height: 100%;
-	background-image: url("../img/placeholder.png");
+	background-image: url("../img/about.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -331,12 +342,14 @@ button {
 .cover_text {
 	position: absolute;
 	right: 50%;
-	top: 40%;
+	top: 30%;
 	transform: translate(50%, 50%);
+	color: #FFFFFF;
 }
 
 .cover_title {
-	font-size: 3em;
+	font-size: 5em;
+	margin: 0;
 }
 /*
 ------------------------------------------------------------------------- Page Cover Style END HERE
