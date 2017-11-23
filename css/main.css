@@ -68,6 +68,12 @@ img {
   border: 1px solid #F2F2F2;
 }
 
+figure.img_resize {
+	width: 40%;
+	margin: auto;
+	margin-bottom: 3em;
+}
+
 figcaption {
   font-size: 0.85em;
 }
@@ -348,6 +354,11 @@ button, .button {
 
 .panwiberry_cover {
 	background-image: url("../img/panwiberry/panwiberry_cover.png");
+}
+
+.duet_cover {
+	background-image: url("../img/duet/duet_cover.png");
+	background-position: bottom;
 }
 
 .cover_text {
