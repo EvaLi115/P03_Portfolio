@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eva Li</title>
 
+    <link rel="icon" href="img/logo.ico">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/flexbox.css">
   </head>
@@ -13,6 +14,9 @@
     <header>
       <nav id="topNav" class="nav_container">
         <!-- Personal Logo -->
+        <a href="" class="float_left">
+          <img src="img/logo.png" alt="A logo of Eva Li." class="logo">
+        </a>
         <a href="" class="float_left">
           <h1>Eva Li</h1>
         </a>
@@ -47,15 +51,85 @@
       <!-- About section -->
       <section class="body_container white">
         <section id="about" class="first_piece_content">
-          <h2 class="center_align">ABOUT ME</h2>
+          <div class="center_align">
+            <div class="square_block float_left">
+              <div class="square square_big"></div>
+              <div class="square square_small"></div>
+            </div>
+
+            <div class="square_block float_right">
+              <div class="square square_small"></div>
+              <div class="square square_big"></div>
+            </div>
+            <h2>ABOUT ME</h2>
+          </div>
 
           <!-- Bio Content -->
-          <div>
-            <p>I am a UX and UI designer who is also passionate about web design, and I am currently studying in the School of Interactive Art and Technology (SIAT), at SFU, completing my Bachelor of Science degree. I discovered my interest in user-centred experience and interface design for interactive technologies when I enrolled in two courses that required real research participants for user data collection. This allowed me to gain real experience working with the users to study their behaviour and culture, and come up with technological solutions that they preferred to use to solve the problems concerning them. </p>
+          <div class="col_2_container">
+            <img src="img/profile.png" alt="This a profile image of Eva Li." class="col_1of2 col_img">
+
+            <p class="col_1of2">I am a UX and UI designer who is also passionate about web design, and I am currently studying in the School of Interactive Art and Technology (SIAT), at SFU, completing my Bachelor of Science degree. I discovered my interest in user-centred experience and interface design for interactive technologies when I enrolled in two courses that required real research participants for user data collection. This allowed me to gain real experience working with the users to study their behaviour and culture, and come up with technological solutions that they preferred to use to solve the problems concerning them. </p>
           </div>
         </section>
       </section>
       <!-- About END HERE -->
+
+      <!-- My Interest and Skill section -->
+      <section class="body_container dark">
+        <section id="skill_interest" class="col_2_container">
+          <div class="col_1of2">
+            <div class="center_align">
+              <div class="square_block float_left">
+                <div class="square square_big"></div>
+                <div class="square square_small"></div>
+              </div>
+
+              <div class="square_block float_right">
+                <div class="square square_small"></div>
+              </div>
+              <h2>MY SKILLS</h2>
+
+              <h3>· &nbsp;&nbsp;DESIGN&nbsp;&nbsp; ·</h3>
+              <p>Ideation, Sketching, Illustration, Layout, Interface, Interaction</p>
+
+              <h3>· &nbsp;&nbsp;TECHNICAL&nbsp;&nbsp; ·</h3>
+              <p>Research, Document, Analysis, Wireframe, Evaluate, Prototype, Usability Test, Program, Debug</p>
+
+              <h3>· &nbsp;&nbsp;TOOLS&nbsp;&nbsp; ·</h3>
+              <p>Adobe Creative Suite (Illustrator, Photoshop, Premiere, After Effects), HTML / CSS, Proto.io, InVision, Axure RP, Unity, Autodesk Maya, MS Word, Excel, PowerPoint</p>
+
+              <h3>· &nbsp;&nbsp;LANGUAGE&nbsp;&nbsp; ·</h3>
+              <p>English, Mandarin</p>
+            </div>
+          </div>
+
+          <span class="divide_line"></span>
+
+          <div class="col_1of2">
+            <div class="center_align">
+              <div class="square_block float_left">
+                <div class="square square_small"></div>
+              </div>
+
+              <div class="square_block float_right">
+                <div class="square square_small"></div>
+                <div class="square square_big"></div>
+              </div>
+              <h2>MY INTERESTS</h2>
+
+              <h3>· &nbsp;&nbsp;HANDCRAFT&nbsp;&nbsp; ·</h3>
+              <p>I love handcraft like cross stitch, felt craft, paper craft, painting, model making, and bookmarker.</p>
+
+              <h3>· &nbsp;&nbsp;TRAVEL&nbsp;&nbsp; ·</h3>
+              <p>I like travelling around to see scenery and to refresh mind.</p>
+
+              <h3>· &nbsp;&nbsp;HIKING&nbsp;&nbsp; ·</h3>
+              <p>I enjoy the beauty of the nature while exercising.</p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- My Interest and Skill END HERE -->
 
       <!-- Portfolio section -->
       <section class="body_container light">
@@ -75,7 +149,7 @@
                   <a href="work/panwiberry.html">Panwoberry App (UX/UI Design)</a>
                 </div>
                 <div class="project_info">
-                  <a href="work/panwiberry.html">Read More &#8594;</a>
+                  <a href="work/panwiberry.html" title="panwiberry link">Read More &#8594;</a>
                 </div>
               </div>
 
@@ -90,7 +164,7 @@
                   <a href="work/duet.html">Duet App (UX/UI Design)</a>
                 </div>
                 <div class="project_info">
-                  <a href="work/duet.html">Read More &#8594;</a>
+                  <a href="work/duet.html" title="duet link">Read More &#8594;</a>
                 </div>
               </div>
             </div>

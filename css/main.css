@@ -14,7 +14,7 @@ body {
 }
 
 h1, h2, h3, h4, a {
-  font-weight: 600;
+  font-weight: 400;
   outline: 0;
 }
 
@@ -24,6 +24,7 @@ h1 {
 
 h2 {
 	font-size: 1.75em;
+	color: #6A5A98;
 }
 
 h4{
@@ -45,6 +46,7 @@ p {
 
 .center_align {
 	text-align: center;
+	margin: auto;
 }
 
 
@@ -66,6 +68,12 @@ img {
   width: 100%;
   height: auto;
   border: 1px solid #F2F2F2;
+}
+
+.logo {
+	border: none;
+	width: 85%;
+	vertical-align: middle;
 }
 
 figure.img_resize {
@@ -96,7 +104,7 @@ header {
 }
 
 .nav_container {
-	width: 60%;
+	width: 70%;
 	margin: auto;
 	line-height: 75px;
 }
@@ -119,7 +127,8 @@ header {
 
 .nav_container a.float_left {
 	margin-left: 0;
-	margin-right: 2em;
+	margin-right: 0.5em;
+	line-height: 80px;
 }
 
 .nav_container a.float_left h1 {
@@ -141,41 +150,41 @@ header {
 
 
 /*
-------------------------------------------------------------------------- Sub-navigation Style
+------------------------------------------------------------------------- sub_navigation Style
 */
-.sub-nav {
+.sub_nav {
   position: fixed;
   width: 100%;
   top:80px;
-  padding: 0 2%;
   text-align: right;
   background-color: #F2F2F2;
   z-index: 800;
 }
 
-.sub-nav ul {
-  margin: 0.5em 0;
-  padding: 0;
+.sub_nav ul {
+	margin: 0.5em auto;
+	padding: 0;
+	width: 70%;
 }
 
-.sub-nav li {
+.sub_nav li {
   display: inline-block;
 }
 
-.sub-nav li a {
+.sub_nav li a {
   text-decoration: none;
   color: #9B9B9B;
-  margin: 0 1.25em;
+  margin: 0 0 0 1.5em;
   font-size: 0.85em;
   font-weight: 400;
   transition: color  0.5s ease;
 }
 
-.sub-nav li a:hover, .sub-nav li a:focus {
+.sub_nav li a:hover, .sub_nav li a:focus {
   color: #12667C;
 }
 /*
-------------------------------------------------------------------------- Sub-navigation Style END HERE
+------------------------------------------------------------------------- sub_navigation Style END HERE
 */
 
 
@@ -193,8 +202,11 @@ header {
 }
 
 .dark {
-	/*background: #4d414f;*/
 	background: #8D9FAA;
+	color: #FFFFFF;
+}
+
+.dark h2 {
 	color: #FFFFFF;
 }
 
@@ -204,7 +216,7 @@ header {
 }
 
 .body_container section {
-	width: 60%;
+	width: 70%;
 	margin: auto;
 	padding: 90px 0;
 }
@@ -367,7 +379,7 @@ button, .button {
 	top: 30%;
 	transform: translate(50%, 30%);
 	color: #FFFFFF;
-	width: 60%;
+	width: 70%;
 	margin: auto;
 }
 
@@ -392,7 +404,7 @@ button, .button {
 ------------------------------------------------------------------------- Project List Style
 */
 .first_piece_content div {
-	margin-top: 3em;
+	/*margin-top: 3em;*/
 }
 
 .overlay_container img {
@@ -426,3 +438,46 @@ button, .button {
 /*
 ------------------------------------------------------------------------- Project List Style END HERE
 */
+
+
+.square_block {
+	display: inline-flex;
+	margin: 0.7em 0;
+}
+
+.square {
+	background: #6A5A98;
+	transform:rotate(45deg);
+}
+
+.square_small {
+	height: 8px;
+	width: 8px;
+	margin: auto 0.1em;
+}
+
+.square_big  {
+  height: 15px;
+	width: 15px;
+	margin: auto 0.1em;
+}
+
+.col_1of2 {
+	width: 49.5%;
+}
+
+.col_img {
+	height: 25%;
+	width: 25%;
+	margin: auto;
+	border-radius: 50%;
+}
+
+.col_1of2 p {
+	width: 70%;
+	margin: -1em auto 2em;
+}
+
+.divide_line {
+	border-left: 1px solid white;
+}

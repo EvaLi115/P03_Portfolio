@@ -1,7 +1,7 @@
 /*
 ---------------------------------------------------------------------------- Display Flex
 */
-.project_container {
+.project_container, .col_2_container {
   display: flex;
   display: -ms-flex;
   display: -moz-flex;
@@ -17,7 +17,7 @@
 /*
 --------------------------------------------------------------------- Flex-wrap with wrap
 */
-.project_container {
+.project_container, .col_2_container {
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
@@ -43,7 +43,7 @@
 }
 
 /*justify-content at space-between content*/
-.project_container {
+.project_container, .col_2_container {
   justify-content: space-between;
   justify-content: -ms-space-between;
   justify-content: -moz-space-between;
@@ -54,7 +54,7 @@
 */
 
 /* 1 1 flex auto*/
-.project_container {
+.project_container, .col_2_container {
   flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   -moz-flex: 1 1 auto;
