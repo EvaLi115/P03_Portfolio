@@ -27,7 +27,7 @@ text.home_info {
 }
 
 /*animation*/
-#left-eye, #right-eye {
+.left_eye, .right_eye {
   animation-name: blink;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -48,7 +48,7 @@ text.home_info {
   }
 }
 
-#left-hand {
+.left_hand {
   animation-name: left-hand-move;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -67,7 +67,7 @@ text.home_info {
   }
 }
 
-#right-hand {
+.right_hand {
   animation-name: right-hand-move;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -87,7 +87,7 @@ text.home_info {
 }
 
 
-svg.svg-img g#head {
+svg.svg-img g.head {
   animation-name: head-move;
   animation-duration: 15s;
   animation-iteration-count: infinite;
