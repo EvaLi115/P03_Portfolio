@@ -25,6 +25,16 @@ h1 {
 h2 {
 	font-size: 1.75em;
 	color: #6A5A98;
+	border-bottom: 1px solid #6A5A98;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	padding-bottom: 0.5em;
+}
+
+h3 {
+	/*color: #A097C0;*/
+	color: #D8CEC1;
 }
 
 h4{
@@ -84,7 +94,6 @@ figure.img_resize {
 figcaption {
   font-size: 0.85em;
 }
-
 
 /*
 ------------------------------------------------------------------------- Navigation Style
@@ -209,6 +218,7 @@ header {
 
 .dark h2 {
 	color: #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
 }
 
 .page_Heading {
@@ -219,7 +229,7 @@ header {
 .body_container section {
 	width: 70%;
 	margin: auto;
-	padding: 90px 0;
+	padding: 60px 0;
 }
 
 code {
@@ -446,7 +456,7 @@ button, .button {
 
 .square_block {
 	display: inline-flex;
-	margin: 0.7em 0;
+	margin: 2em 0;
 }
 
 .square {
@@ -485,7 +495,7 @@ button, .button {
 }
 
 .divide_line {
-	border-left: 1px solid white;
+	border-left: 1px dotted #D8CEC1;
 }
 
 
@@ -523,15 +533,4 @@ button, .button {
 }
 /*
 ------------------------------------------------------------------------- Anchor Menu END HERE
-*/
-
-
-
-
-/*
-------------------------------------------------------------------------- Carousel Image
-*/
-
-/*
-------------------------------------------------------------------------- Carousel Image END Here
 */

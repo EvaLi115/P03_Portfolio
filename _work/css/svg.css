@@ -92,6 +92,7 @@ svg.svg-img g#head {
   animation-duration: 15s;
   animation-iteration-count: infinite;
   transform-origin: 50%;
+  transition: all 0.5s;
 }
 
 @keyframes head-move {
