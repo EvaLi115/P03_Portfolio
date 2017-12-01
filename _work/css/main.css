@@ -115,9 +115,6 @@ header {
   height: 60px;
   z-index: 1000;
 	background: #FFF;
-	/*-webkit-box-shadow: 0px 2px 5px #CCC;
- 	-moz-box-shadow: 0px 2px 5px #CCC;
-	box-shadow: 0px 2px 5px #CCC;*/
 	transition: background-color  0.5s ease;
 }
 
@@ -173,7 +170,7 @@ header {
 .sub_nav {
   position: fixed;
   width: 100%;
-  top:80px;
+  top:60px;
   text-align: right;
   background-color: #F2F2F2;
   z-index: 800;
@@ -231,7 +228,7 @@ header {
 
 .page_Heading {
   font-size: 2em;
-  margin: 0.5em 0;
+  margin: 2em auto;
 }
 
 .body_container section {
@@ -267,7 +264,6 @@ code {
   z-index: 1000;
   padding: 0 2%;
   background: #82BAC7;
-  /*background: linear-gradient(to top left, #9CCAD6 25%, #12667C);*/
   overflow: hidden;
   transition: background-color  0.5s ease;
 }
@@ -343,20 +339,41 @@ button, .button {
 }
 
 .color_1 {
-  background: #484848;
+  background: #D8CEC1;
 }
 
 .color_2 {
-  background: #12667C;
+  background: #9CCAD6;
 }
 
 .color_3 {
-  background: #82BAC7;
+  background: #82BAC7	;
 }
 
 .color_4 {
-  background: #9CCAD6;
+  background: #12667C;
 }
+
+.color_5 {
+  background: #8D9FAA;
+}
+
+.color_6 {
+  background: #464654;
+}
+
+.color_7 {
+  background: #484848;
+}
+
+.color_8 {
+  background: #6A5A98;
+}
+
+.color_9 {
+  background: #EA8663;
+}
+
 /*
 ------------------------------------------------------------------------- Color Palette Style END HERE
 */
@@ -575,4 +592,10 @@ footer a {
 
 .link_container {
 	margin: 2em 0;
+}
+
+
+.color_item {
+	margin: 0.25em;
+	text-align: center;
 }
