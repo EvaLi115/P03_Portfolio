@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panwiberry</title>
 
+    <link rel="icon" href="../img/logo.ico">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/query.css">
     <link rel="stylesheet" href="../css/flexbox.css">
+    <link rel="stylesheet" href="../css/svg.css">
   </head>
   <body>
     <!-- Header -->
     <header>
       <nav id="topNav" class="nav_container">
         <!-- Personal Logo -->
+        <a href="" class="float_left">
+          <img src="../img/logo.png" alt="A logo of Eva Li." class="logo">
+        </a>
         <a href="" class="float_left">
           <h1>Eva Li</h1>
         </a>
@@ -41,10 +47,27 @@
     </section>
     <!-- Page Cover END HERE -->
 
+    <!-- Side Anchor Menu -->
+    <div class="side-nav">
+      <ul>
+        <li> <a href="#panwiberry">Top of page</a> </li>
+        <li> <a href="#project-overview">Project Overview</a> </li>
+        <li> <a href="#data-collection">Data Collection</a> </li>
+        <li> <a href="#persona">Personas</a> </li>
+        <li> <a href="#cultural-probe">Cultural Probe</a> </li>
+        <li> <a href="#user-flow">User Flow</a> </li>
+        <li> <a href="#modified-user-flow">Modified Flow</a> </li>
+        <li> <a href="#result">Final Result</a> </li>
+        <li> <a href="#Reflection">My Reflection</a> </li>
+        <li> <a href="#other-projects">Other Projects</a> </li>
+      </ul>
+    </div>
+    <!-- Side Anchor Menu END HERE -->
+
     <!-- Body Content -->
       <!-- Project brief section -->
       <section class="body_container white">
-        <section class="first_piece_content">
+        <section id="project-breif" class="first_piece_content">
           <h2 class="center_align">PROJECT OVERVIEW</h2>
 
           <!-- Project Brief -->
@@ -67,13 +90,13 @@
 
       <!-- Participant Ethnography Data Collection section -->
       <section class="body_container dark">
-        <section>
+        <section  id="data-collection" >
           <h2 class="center_align">PROCESS</h2>
           <h3 class="center_align">· &nbsp;&nbsp;Participant Ethnography Data Collection&nbsp;&nbsp; ·</h3>
           <p>I studied the members within the group's first weekly practice meeting for 5 hours. The data collected includes the group's culture, members' values towards the group, their behaviours around each other, and the kind of language and tone used in the activity. In order to find the data, I closely observed the members in person by taking photography and video recording, and then interviewed them about their status in the club and their thoughts during their practice activity. These data are then used to develop a design focus and a thematic analysis for the group.</p>
 
           <figure>
-            <img src="../img/panwiberry/ethnography_data.png" alt="A research poster of a dance crew ethnography data collection">
+            <img src="../img/panwiberry/ethnography_data.png" alt="A research poster of a dance crew ethnography data collection"/>
             <figcaption>Participant Ethnography Data Collection Poster Of Panwiberry</figcaption>
           </figure>
         </section>
@@ -82,7 +105,7 @@
 
       <!-- Personas section -->
       <section class="body_container light">
-        <section>
+        <section id="persona">
           <h3 class="center_align">· &nbsp;&nbsp;Personas&nbsp;&nbsp; ·</h3>
           <p>From the data collected and the analysis about the participant group's behaviours and activities, three personas are been formed in three levels to represent the participants as the end users.</p>
 
@@ -110,7 +133,7 @@
 
       <!-- Cultural Probe section -->
       <section class="body_container dark">
-        <section>
+        <section id="cultural-probe">
           <h3 class="center_align">· &nbsp;&nbsp;Cultural Probe&nbsp;&nbsp; ·</h3>
           <p>Having the end users in mind, I designed a set of customized booklet specifically for each participant to complete individually within a week. These customized booklets contain questions asking about their personal values toward the group, their personality, daily behaviour patterns, and motivation. The goal is to better engage and develop a better relationship between our research group and the participants. The result is then used to refine design focus.</p>
 
@@ -127,10 +150,10 @@
       </section>
       <!-- Cultural Probe END HERE -->
 
-      <!-- Solutions Proposal section -->
+      <!-- User Journey Flow section -->
       <section class="body_container light">
-        <section>
-          <h3 class="center_align">· &nbsp;&nbsp;Solutions Proposal&nbsp;&nbsp; ·</h3>
+        <section id="user-flow">
+          <h3 class="center_align">· &nbsp;&nbsp;User Journey Flow&nbsp;&nbsp; ·</h3>
           <p>There are three proposals that aimed at different design focus. </p>
 
           <figure>
@@ -149,11 +172,11 @@
           </figure>
         </section>
       </section>
-      <!-- Solutions Proposal END HERE -->
+      <!-- User Journey Flow END HERE -->
 
-      <!-- User Journey Flow section -->
+      <!-- Modified User Journey Flow section -->
       <section class="body_container dark">
-        <section>
+        <section id="modified-user-flow">
           <h3 class="center_align">· &nbsp;&nbsp;Modified User Journey Flow&nbsp;&nbsp; ·</h3>
           <p>Each concept has an in-depth of journey framework from 3 perspectives of 3 different roles in the group (general member, leader, designer), explaining how different end users would use the design and how they would feel during the action.</p>
 
@@ -170,11 +193,11 @@
           </figure>
         </section>
       </section>
-      <!-- User Journey Flow END HERE -->
+      <!-- Modified User Journey Flow END HERE -->
 
       <!-- Final Result section -->
       <section class="body_container light">
-        <section>
+        <section id="result">
           <h3 class="center_align">· &nbsp;&nbsp;Final Result&nbsp;&nbsp; ·</h3>
           <p></p>
           <figure>
@@ -193,7 +216,7 @@
 
       <!-- Reflection section -->
       <section class="body_container dark">
-        <section>
+        <section id="reflection">
           <h3 class="center_align">· &nbsp;&nbsp;My Reflection&nbsp;&nbsp; ·</h3>
           <p>Although there was a lot of data to be collected and analyzed, I found this project very interesting and engaging. This is one of the first experience allowed me to work closely with the end users, where they also acted as the stakeholders. I liked the experience of helping the end users to solve a problem, and getting feedback from them to improve the usability in the way they preferred. </p>
 
@@ -204,7 +227,7 @@
 
       <!-- Other Projects section -->
       <section class="body_container light">
-        <section>
+        <section id="other-projects">
           <h3 class="center_align">Other Projects</h3>
           <div class="project_list">
             <div class="project_container">
@@ -219,6 +242,7 @@
                   <a href="panwiberry.html">Panwoberry App (UX/UI Design)</a>
                 </div>
                 <div class="project_info">
+                  <p>A planning and managing mobile App enhancing member communication, relationship and motivation.</p>
                   <a href="panwiberry.html" title="panwiberry link">Read More &#8594;</a>
                 </div>
               </div>
@@ -234,6 +258,7 @@
                   <a href="duet.html">Duet App (UX/UI Design)</a>
                 </div>
                 <div class="project_info">
+                  <p>A distance relationship managing App to manage, maintain and improve relationship.</p>
                   <a href="duet.html" title="duet link">Read More &#8594;</a>
                 </div>
               </div>

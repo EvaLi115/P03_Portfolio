@@ -98,7 +98,6 @@ header {
   height: 60px;
   z-index: 1000;
 	background: #FFF;
-	overflow: hidden;
 	-webkit-box-shadow: 0px 2px 5px #CCC;
  	-moz-box-shadow: 0px 2px 5px #CCC;
 	box-shadow: 0px 2px 5px #CCC;
@@ -353,7 +352,7 @@ button, .button {
 .big_image_header {
 	height: 600px;
 	position: relative;
-	background: linear-gradient(to right bottom, #E986F9 30%, #1DD9E5);
+	/*background: linear-gradient(to right bottom, #E986F9 30%, #1DD9E5);*/
 }
 
 #panwiberry.big_image_header {
@@ -488,3 +487,51 @@ button, .button {
 .divide_line {
 	border-left: 1px solid white;
 }
+
+
+
+
+/*
+------------------------------------------------------------------------- Anchor Menu
+*/
+.side-nav {
+	position: sticky;
+	position: -moz-box-sticky;
+	float: left;
+	top: 50%;
+	display: block;
+	z-index: 50;
+	width: 9em;
+	transform: translate(0, -50%);
+	transition: all 0.5s ease;
+}
+
+.side-nav ul {
+	list-style: circle;
+}
+
+.side-nav a {
+	text-decoration: none;
+	color: #484848;
+	transition: all 0.5s;
+	font-size: 0.8em;
+}
+
+.side-nav ul li:hover, .side-nav ul li:focus, .side-nav a:hover, .side-nav a:focus {
+	color: #9DE4F5;
+	list-style: disc;
+}
+/*
+------------------------------------------------------------------------- Anchor Menu END HERE
+*/
+
+
+
+
+/*
+------------------------------------------------------------------------- Carousel Image
+*/
+
+/*
+------------------------------------------------------------------------- Carousel Image END Here
+*/

@@ -15,6 +15,12 @@
 	}
 }
 
+@media (max-width: 62em) {
+	.side-nav {
+    display: none;
+  }
+}
+
 @media (max-width: 48em) {
 	.nav_container, .body_container section {
 		width: auto;
