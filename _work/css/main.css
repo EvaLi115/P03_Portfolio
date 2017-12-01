@@ -71,12 +71,20 @@ hr.subsection_divide {
 }
 
 figure {
+	margin: 0 0 2em;
+}
+
+.project_list figure {
 	margin: 0;
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+#user-flow figure img, #modified-user-flow figure img, #result figure img {
+	width: 100%;
 }
 
 .logo {
@@ -86,7 +94,7 @@ img {
 }
 
 figure.img_resize {
-	width: 40%;
+	width: 60%;
 	margin: auto;
 	margin-bottom: 3em;
 }
@@ -107,9 +115,9 @@ header {
   height: 60px;
   z-index: 1000;
 	background: #FFF;
-	-webkit-box-shadow: 0px 2px 5px #CCC;
+	/*-webkit-box-shadow: 0px 2px 5px #CCC;
  	-moz-box-shadow: 0px 2px 5px #CCC;
-	box-shadow: 0px 2px 5px #CCC;
+	box-shadow: 0px 2px 5px #CCC;*/
 	transition: background-color  0.5s ease;
 }
 
@@ -406,6 +414,15 @@ button, .button {
 	font-size: 1em;
 	line-height: normal;
 }
+
+.home_title, .home_info {
+  font-size: 2em;
+	margin: 0;
+}
+
+.home_info {
+	font-size: 1.13em;
+}
 /*
 ------------------------------------------------------------------------- Page Cover Style END HERE
 */
@@ -534,3 +551,28 @@ button, .button {
 /*
 ------------------------------------------------------------------------- Anchor Menu END HERE
 */
+
+
+
+
+/*
+------------------------------------------------------------------------- Footer
+*/
+footer {
+	background: #464654;
+	margin: 0;
+	padding-top: 2em;
+	height: 200px;
+	color: white;
+	display: block;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+	font-size: 0.8em;
+}
+
+.link_container {
+	margin: 2em 0;
+}
