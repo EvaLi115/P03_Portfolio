@@ -323,6 +323,14 @@ button, .button {
   padding: 0.5em;
 }
 
+#codeRef ul li, #ideaRef ul li {
+	margin: 1em 0;
+}
+
+#codeRef ul li a, #ideaRef ul li a {
+	word-wrap: break-word;
+}
+
 /*
 ------------------------------------------------------------------------- Body Content Style END HERE
 */
