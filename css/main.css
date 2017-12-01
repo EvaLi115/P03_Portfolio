@@ -61,13 +61,12 @@ hr.subsection_divide {
 }
 
 figure {
-	margin: 0 0 3em;
+	margin: 0;
 }
 
 img {
   width: 100%;
   height: auto;
-  border: 1px solid #F2F2F2;
 }
 
 .logo {
@@ -93,27 +92,30 @@ figcaption {
 header {
   display: block;
   position: sticky;
+	position: -moz-box-sticky;
   top: 0;
   width: 100%;
-  height: 70px;
+  height: 60px;
   z-index: 1000;
 	background: #FFF;
 	overflow: hidden;
-	box-shadow: 0 2px 5px #CCC;
+	-webkit-box-shadow: 0px 2px 5px #CCC;
+ 	-moz-box-shadow: 0px 2px 5px #CCC;
+	box-shadow: 0px 2px 5px #CCC;
 	transition: background-color  0.5s ease;
 }
 
 .nav_container {
 	width: 70%;
 	margin: auto;
-	line-height: 75px;
+	line-height: 60px;
 }
 
 .nav_container a {
 	text-decoration: none;
 	display: inline-block;
 	text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   font-size: 0.95em;
   margin-left: 2em;
   color: #9B9B9B;
@@ -128,18 +130,18 @@ header {
 .nav_container a.float_left {
 	margin-left: 0;
 	margin-right: 0.5em;
-	line-height: 70px;
+	line-height: 60px;
 }
 
 .nav_container a.float_left h1 {
   margin: 0;
-  line-height: 70px;
+  line-height: 60px;
   color: #A849B7;
 }
 
 .nav_container a.current_page{
   color: #82BAC7;
-  border-bottom: 3px solid #82BAC7;
+  border-bottom: 1px solid #82BAC7;
 	font-weight: 600;
 }
 /*
@@ -254,9 +256,15 @@ code {
 }
 
 /*button*/
+.button_cover {
+	position: absolute;
+	right: 3%;
+	transform: translate(11%, -230%);
+}
+
 button, .button {
   border: 1px solid #FFF;
-  padding: 1em 3em;
+  padding: 0.75em 2em;
 	margin: 3em 0;
   text-align: center;
   text-decoration: none;
@@ -271,7 +279,7 @@ button, .button {
 
 .button_unfill {
   background-color: transparent;
-  color: #FFF;
+  color: #EA8663;
 }
 
 .button_fill:hover, .button_fill:focus, .button_unfill:hover, .button_unfill:focus  {
@@ -369,12 +377,6 @@ button, .button {
 	background-position: bottom;
 }
 
-.test {
-	position: absolute;
-	right: 10%;
-	transform: translate(10%, -200%);
-}
-
 .cover_text {
 	position: absolute;
 	right: 50%;
@@ -421,7 +423,7 @@ button, .button {
 .project_item {
 	display: inline-block;
 	max-width: 48%;
-	margin: 3em 0.1em;
+	margin: 3em 0em;
 }
 
 .project_title a, .project_info a {
@@ -430,11 +432,12 @@ button, .button {
 	transition: color 0.5s ease;
 }
 
-.project_info a {
-	font-size: 0.8em;
+.project_info p, .project_info a {
+	font-size: 0.85em;
+	margin-bottom: 0;
 }
 
-.project_item a:hover, .project_item a:focus{
+.project_info a, .project_item a:hover, .project_item a:focus{
 	color: #82BAC7;
 }
 /*
@@ -473,6 +476,8 @@ button, .button {
 	width: 25%;
 	margin: auto;
 	border-radius: 50%;
+	border: 1px solid #302624;
+	background: #8D9FAA;
 }
 
 .col_1of2 p {
@@ -482,58 +487,4 @@ button, .button {
 
 .divide_line {
 	border-left: 1px solid white;
-}
-
-
-
-
-
-
-
-/*media query*/
-
-@media (max-width: 83.125em) {
-	.col_1of2 {
-		width: 100%;
-	}
-
-	.col_img {
-		width: 40%;
-	}
-
-	.cover_text {
-		width: 100%;
-		padding: 0 2%;
-	}
-}
-
-@media (max-width: 48em) {
-	.nav_container, .body_container section {
-		width: auto;
-		margin: 0 1%;
-	}
-}
-
-@media (max-width: 41em) {
-	.cover_text {
-		top: 10%;
-	}
-
-	.cover_title {
-		font-size: 3.5em;
-	}
-}
-
-@media (max-width: 31em) {
-	.nav_container div.float_right {
-		width: 50%;
-	}
-
-	.nav_container a {
-		margin-left: 2%;
-	}
-
-	.project_item {
-		max-width: 100%;
-	}
 }

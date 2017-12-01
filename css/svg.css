@@ -87,7 +87,7 @@ text.home_info {
 }
 
 
-#head {
+svg.svg-img g#head {
   animation-name: head-move;
   animation-duration: 15s;
   animation-iteration-count: infinite;
