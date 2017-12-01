@@ -49,15 +49,40 @@
 }
 
 @media (max-width: 31em) {
-	.nav_container div.float_right {
-		width: 50%;
-	}
-
 	.nav_container a {
 		margin-left: 2%;
 	}
 
 	.project_item {
 		max-width: 100%;
+	}
+
+	.nav_container div.float_left {
+		display: block;
+		float: inherit;
+		text-align: center;
+	}
+
+	.nav_container div.float_right {
+		width: 100%;
+		text-align: center;
+	}
+
+	header {
+		height: 120px;
+		margin: 0;
+	}
+
+	div.link_container {
+		display: inline-block;
+	}
+
+	div.link_container a {
+		display: block;
+		width: 100%;
+	}
+
+	footer{
+		padding-top: 1em;
 	}
 }

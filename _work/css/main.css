@@ -140,15 +140,15 @@ header {
   color: #82BAC7;
 }
 
-.nav_container a.float_left {
+.nav_container div.float_left a {
 	margin-left: 0;
 	margin-right: 0.5em;
 	line-height: 60px;
 }
 
-.nav_container a.float_left h1 {
+.nav_container div.float_left a h1 {
   margin: 0;
-  line-height: 60px;
+  line-height: normal;
   color: #A849B7;
 }
 
@@ -590,6 +590,7 @@ footer {
 	height: 200px;
 	color: white;
 	display: block;
+	transition: all 0.5s ease;
 }
 
 footer a {
@@ -599,7 +600,7 @@ footer a {
 }
 
 .link_container {
-	margin: 2em 0;
+	margin: 1.5em 0 0.5em;
 }
 
 
