@@ -92,10 +92,10 @@ figcaption {
 */
 header {
   display: block;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
-  height: 80px;
+  height: 70px;
   z-index: 1000;
 	background: #FFF;
 	overflow: hidden;
@@ -128,12 +128,12 @@ header {
 .nav_container a.float_left {
 	margin-left: 0;
 	margin-right: 0.5em;
-	line-height: 80px;
+	line-height: 70px;
 }
 
 .nav_container a.float_left h1 {
   margin: 0;
-  line-height: 80px;
+  line-height: 70px;
   color: #A849B7;
 }
 
@@ -360,10 +360,6 @@ button, .button {
 	background-attachment: fixed;
 }
 
-.about_cover {
-	background-image: url("../img/about.png");
-}
-
 .panwiberry_cover {
 	background-image: url("../img/panwiberry/panwiberry_cover.png");
 }
@@ -371,6 +367,12 @@ button, .button {
 .duet_cover {
 	background-image: url("../img/duet/duet_cover.png");
 	background-position: bottom;
+}
+
+.test {
+	position: absolute;
+	right: 10%;
+	transform: translate(10%, -200%);
 }
 
 .cover_text {
@@ -480,4 +482,58 @@ button, .button {
 
 .divide_line {
 	border-left: 1px solid white;
+}
+
+
+
+
+
+
+
+/*media query*/
+
+@media (max-width: 83.125em) {
+	.col_1of2 {
+		width: 100%;
+	}
+
+	.col_img {
+		width: 40%;
+	}
+
+	.cover_text {
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+
+@media (max-width: 48em) {
+	.nav_container, .body_container section {
+		width: auto;
+		margin: 0 1%;
+	}
+}
+
+@media (max-width: 41em) {
+	.cover_text {
+		top: 10%;
+	}
+
+	.cover_title {
+		font-size: 3.5em;
+	}
+}
+
+@media (max-width: 31em) {
+	.nav_container div.float_right {
+		width: 50%;
+	}
+
+	.nav_container a {
+		margin-left: 2%;
+	}
+
+	.project_item {
+		max-width: 100%;
+	}
 }

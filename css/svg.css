@@ -1,0 +1,155 @@
+.about-cover {
+  position: relative;
+  background: #D8CEC1;
+  height: 100vh;
+}
+
+.svg-img {
+  background: #D8CEC1;
+  height: 100%;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.e-logo polygon.st147{
+  fill: aquamarine;
+}
+
+text.home_title, text.home_info {
+  font-size: 4em;
+	fill: #FFF;
+  text-anchor: middle;
+}
+
+text.home_info {
+	font-size: 1.13em;
+}
+
+/*animation*/
+#left-eye, #right-eye {
+  animation-name: blink;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50%;
+}
+
+@keyframes blink {
+  /*code reference:https://codepen.io/bfred-it/pen/RNGOQW*/
+  97% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  98% {
+    transform: translateY(3px) scaleY(0.1)
+  }
+  100% {
+    animation-timing-function: ease-out;
+  }
+}
+
+#left-hand {
+  animation-name: left-hand-move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 0%;
+}
+
+@keyframes left-hand-move {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+#right-hand {
+  animation-name: right-hand-move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 0%;
+}
+
+@keyframes right-hand-move {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+#head {
+  animation-name: head-move;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  transform-origin: 50%;
+}
+
+@keyframes head-move {
+  0% {
+    transform: rotate(-5deg);
+  }
+  30% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.bloom {
+  animation-name: bloom;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  transform-origin: 50%;
+}
+
+@keyframes bloom {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.big-flower {
+  animation-name: big-bloom;
+  animation-duration: 18s;
+}
+
+@keyframes big-bloom {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  70% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
