@@ -170,28 +170,68 @@ text.home_info {
 
 
 svg.svg-img g.head {
-  animation-name: head-move;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  transform-origin: 50%;
+  -moz-animation: head-move 15s infinite;
+  -webkit-animation: head-move 15s infinite;
+  animation: head-move 15s infinite;
+
+  -moz-transform-origin: 50%;
+  -webkit-transform-origin: 50%;
+  transform-origin: center 60%;
+
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-@keyframes head-move {
+@-moz-keyframes head-move {
   0% {
-    transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
   }
   30% {
-    transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
   }
   50% {
-    transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
   }
   80% {
-    transform: rotate(-5deg);
+    -moz-transform: rotate(5deg);
   }
   100% {
-    transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+  }
+}
+@-webkit-keyframes head-move {
+  0% {
+    -webkit-transform: rotate(-5deg);
+  }
+  30% {
+    -webkit-transform: rotate(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(1deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+  }
+}
+@keyframes head-move {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  80% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
