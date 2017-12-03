@@ -92,51 +92,76 @@ text.home_info {
 
 @-moz-keyframes left-hand-move {
   0% {
-    -moz-transform: rotate(-5deg);
+    -moz-transform: rotate(-2deg);
   }
   50% {
-    -moz-transform: rotate(5deg);
+    -moz-transform: rotate(2deg);
   }
   100% {
-    -moz-transform: rotate(-5deg);
+    -moz-transform: rotate(-2deg);
   }
 }
 @-webkit-keyframes left-hand-move {
   0% {
-    -webkit-transform: rotate(-5deg);
+    -webkit-transform: rotate(-2deg);
   }
   50% {
-    -webkit-transform: rotate(5deg);
+    -webkit-transform: rotate(2deg);
   }
   100% {
-    -webkit-transform: rotate(-5deg);
+    -webkit-transform: rotate(-2deg);
   }
 }
 @keyframes left-hand-move {
   0% {
-    transform: rotate(-5deg);
+    transform: rotate(-2deg);
   }
   50% {
-    transform: rotate(5deg);
+    transform: rotate(2deg);
   }
   100% {
-    transform: rotate(-5deg);
+    transform: rotate(-2deg);
   }
 }
 
-/*#right-hand {
-  animation-name: right-hand-move;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  transform-origin: 50% 0%;
-}*/
+#right-hand {
+  -moz-animation: right-hand-move 3s infinite;
+  -webkit-animation: right-hand-move 3s infinite;
+  animation: right-hand-move 3s infinite;
 
+  -moz-transform-origin: center 65%;
+  -webkit-transform-origin: center 65%;
+  transform-origin: center 65%;
+}
+
+@-moz-keyframes right-hand-move {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  50% {
+    -moz-transform: rotate(1deg);
+  }
+  100% {
+    -moz-transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes right-hand-move {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
 @keyframes right-hand-move {
   0% {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(15deg);
+    transform: rotate(1deg);
   }
   100% {
     transform: rotate(0deg);
