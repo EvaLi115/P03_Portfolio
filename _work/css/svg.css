@@ -28,12 +28,16 @@ text.home_info {
 
 /*animation*/
 .left_eye, .right_eye {
-  animation-name: blink;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  -moz-animation: blink 5s infinite;
+  -webkit-animation: blink 5s infinite;
+  animation: blink 5s infinite;
+
+  -moz-transform-origin: 50%;
+  -webkit-transform-origin: 50%;
   transform-origin: 50%;
 }
 
+/*Standard*/
 @keyframes blink {
   /*code reference:https://codepen.io/bfred-it/pen/RNGOQW*/
   97% {
@@ -48,13 +52,66 @@ text.home_info {
   }
 }
 
-.left_hand {
-  animation-name: left-hand-move;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  transform-origin: 50% 0%;
+/*Firefox*/
+@-moz-keyframes blink {
+  97% {
+    -moz-transform: none;
+    -moz-animation-timing-function: ease-in;
+  }
+  98% {
+    -moz-transform: translateY(3px) scaleY(0.1)
+  }
+  100% {
+    -moz-animation-timing-function: ease-out;
+  }
 }
 
+/*Chrome, Opera, Safari*/
+@-webkit-keyframes blink {
+  97% {
+    -webkit-transform: none;
+    -webkit-animation-timing-function: ease-in;
+  }
+  98% {
+    -webkit-transform: translateY(3px) scaleY(0.1)
+  }
+  100% {
+    -webkit-animation-timing-function: ease-out;
+  }
+}
+
+#left-hand {
+  -moz-animation: left-hand-move  5s infinite;
+  -webkit-animation: left-hand-move  5s infinite;
+  animation: left-hand-move  5s infinite;
+
+  -moz-transform-origin: 50% 0;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: right top;
+}
+
+@-moz-keyframes left-hand-move {
+  0% {
+    -moz-transform: rotate(-5deg);
+  }
+  50% {
+    -moz-transform: rotate(5deg);
+  }
+  100% {
+    -moz-transform: rotate(-5deg);
+  }
+}
+@-webkit-keyframes left-hand-move {
+  0% {
+    -webkit-transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+  }
+}
 @keyframes left-hand-move {
   0% {
     transform: rotate(-5deg);
@@ -67,7 +124,7 @@ text.home_info {
   }
 }
 
-.right_hand {
+#right-hand {
   animation-name: right-hand-move;
   animation-duration: 3s;
   animation-iteration-count: infinite;
