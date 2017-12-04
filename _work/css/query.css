@@ -34,9 +34,11 @@
 	img {
 		width: 100%;
 	}
-}
 
-@media (max-width: 41em) {
+	.big_image_header {
+		height: 300px;
+	}
+
 	.cover_text {
 		top: 10%;
 	}
@@ -44,7 +46,9 @@
 	.cover_title {
 		font-size: 3.5em;
 	}
+}
 
+@media (max-width: 41em) {
   .project_item {
     display: block;
     max-width: 100%;

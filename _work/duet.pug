@@ -1,0 +1,184 @@
+- var pageTitle = "Eva Li | Duet"
+- var logo = "../"
+- var projectCover = "duet_cover"
+- var projectName = "Duet"
+- var projectDescription = "Distance Relationship Managing App to manage, maintain and improve relationship."
+- var problem = "Long-distance relationship couples often do not meet in person, cannot do things together physically and cannot be updated with each other’s life events rapidly"
+- var solution = "Built a mobile app to enhance the couples to manage, maintain and improve their relationship for circumstances like loneliness, arguments and bonding along a time-line of their life events."
+- var role = "Ideation, Research, User Interviews, User Analysis, User Journey Flow, Sketching, User Interaction, Wireframing, User Testing and Prototyping."
+- var tool = "Google Doc (Research Documentation & Analysis), Adobe Illustrator CC (Wireframes), InVision (Prototype), and Proto.io (Final Prototype)."
+
+
+doctype html
+html(lang="en")
+  include preProcess/head.pug
+
+  body
+    include preProcess/projectHeader.pug
+
+    include preProcess/projectCover.pug
+
+
+    // Side Anchor Menu
+    div(class="side-nav")
+      ul
+        li
+          a(href="#panwiberry") Top of page
+        li
+          a(href="#project-overview") Project Overview
+        li
+          a(href="#research-proposal") Research and Proposals
+        li
+          a(href="#pre-design") Interview Questionnaire
+        li
+          a(href="#layout-mockup") Layout Mockup
+        li
+          a(href="#prototype-interaction") Prototype Interaction
+        li
+          a(href="#design-emoji") Designing Emoji
+        li
+          a(href="#result") Final Result
+        li
+          a(href="#reflection") My Reflection
+        li
+          a(href="#other-projects") Other Projects
+    // Side Anchor Menu END HERE
+
+    // Body Content
+    section(class="body_container white")
+      section#project-overview(class="first_piece_content")
+        div
+          include preProcess/squareDeco.pug
+
+          include preProcess/projectOverview.pug
+
+
+    // Research and Proposals section
+    section(class="body_container dark")
+      section#research-proposal
+        div
+          include preProcess/squareDeco.pug
+          div(class="center_align")
+            h2 PROCESS
+            div(class="bottom_border")
+            h3 · &nbsp;&nbsp;Research and Proposals&nbsp;&nbsp; ·
+
+          p To start this off, ideas were put down on sticky notes and used it to form affinity diagrams. I have suggested building an app for couples only. After brainstorming and combining other ideas, we decided to design a social networking app for loyal couples only. The main goal of the app is to help long-distance couples to manage, maintain and improve their relationship for situations like loneliness, arguments and bonding. And at the same time, making a timeline that records their life events.
+
+          figure
+            img(src="_work/img/duet/affinity_1.jpg" alt="Affinity diagram for long-distance couples app features ideation.")
+            img(src="_work/img/duet/affinity_2.jpg" alt="Affinity diagram for long-distance couples app features ideation.")
+            figcaption Affinity diagram for features ideation in long-distance couples app.
+
+
+    // Interview questionnaire section
+    section(class="body_container light")
+      section#pre-design
+        div(class="center_align")
+          h3 · &nbsp;&nbsp;Interview Questionnaire&nbsp;&nbsp; ·
+
+        p Once the idea is set, I helped to complete the questionnaire for interviewing the couples and conducted two interviews, asking 2 participants (currently in a long-distance relationship) to answer the designed questionnaire to find out goals and frustrations in their relationship.
+
+        figure
+          img(src="_work/img/duet/questionnaire_1.png" alt="A pre-design questionnaire for interview warmup.")
+          figcaption Pre-design questionnaire for interview warmup.
+
+        figure
+          img(src="_work/img/duet/questionnaire_2.png" alt="A pre-design questionnaire for interview reflection.")
+          figcaption Pre-design questionnaire for interview reflection.
+
+        figure
+          img(src="_work/img/duet/researches_1a.png" alt="Interview result for pre-design warmup from first participant.")
+          figcaption First interview result for pre-design research, warmup.
+
+        figure
+          img(src="_work/img/duet/researches_1b.png" alt="Interview result for pre-design reflection from first participant.")
+          figcaption First interview result for pre-design research, reflection.
+
+        figure
+          img(src="_work/img/duet/researches_2a.png" alt="Interview result for pre-design warmup from second participant.")
+          figcaption Second interview result for pre-design research, warmup.
+
+        figure
+          img(src="_work/img/duet/researches_2b.png" alt="Interview result for pre-design reflection from second participant.")
+          figcaption Second interview result for pre-design research, reflection.
+
+
+    // Layout Mockup section
+    section(class="body_container dark")
+      section#layout-mockup
+        div(class="center_align")
+          h3 · &nbsp;&nbsp;Layout Mockup&nbsp;&nbsp; ·
+
+        p From the analysis of interviews, we generated a detailed set of sketches for each feature/page in the app together. I then used Adobe Illustrator to mockup all the features and some relevant pages in the app. At the same time, I also planned a little bit for some possible interactions steps and made the frames.
+
+        figure
+          img(src="_work/img/duet/layout_sketch_1.jpg" alt="This is a rough planning sketches for features, 1/4.")
+          img(src="_work/img/duet/layout_sketch_2.jpg" alt="This is a rough planning sketches for features, 2/4.")
+          img(src="_work/img/duet/layout_sketch_3.jpg" alt="This is a rough planning sketches for features, 3/4.")
+          img(src="_work/img/duet/layout_sketch_4.jpg" alt="This is a rough planning sketches for features, 4/4.")
+          figcaption 4 rough planning sketches for features.
+
+        figure
+          img(src="_work/img/duet/layout_1.png" alt="My proposal for the homepage, showing overview of important information.")
+          figcaption My proposal for homepage, showing an overview of important information.
+        figure
+          img(src="_work/img/duet/layout_2.png" alt="This is my proposal for the timeline, showing a record of life events.")
+          figcaption My proposal for timeline, showing a record of life events.
+
+
+    // Prototype Interaction section
+    section(class="body_container light")
+      section#prototype-interaction
+        div(class="center_align")
+          h3 · &nbsp;&nbsp;Prototype Interaction&nbsp;&nbsp; ·
+
+        p Immediately after making mockups and interaction frames in Adobe Illustrator, I exported everything into InVision. Using InVision, I linked up all the frames to prototype the interaction flow between all the features within the app.
+        a(href="https://invis.io/NPCBASAUJ#/244128132_Home_Page" class="inText_Link") Checkout early InVision mockup here.
+
+
+
+    // Designing Emoji section
+    section(class="body_container dark")
+      section#design-emoji
+        div(class="center_align")
+          h3 · &nbsp;&nbsp;Designing Emoji&nbsp;&nbsp; ·
+
+        p One of the big features in the app is about using emojis to alert the partner about current mood and then setting up some options of action for the partner to do. This helps to give the partner some suggestions for actions for a specific mood.
+
+        p As emoji is a big feature, I designed a set of emojis specifically for the app. The set of emojis is designed somewhat cute, this is meant to cheer up the end user’s mood when they see the adorable emojis.
+
+        figure
+          img(src="_work/img/duet/emoji_mockup.jpg" alt="This is a mockup of emoji.")
+          figcaption My mockup for emoji.
+
+        figure
+          img(src="_work/img/duet/emoji_sketch.jpg" alt="This is my sketch for emoji.")
+          figcaption My sketch for emoji.
+
+
+    // Final Result section
+    section(class="body_container light")
+      section#result
+        div(class="center_align")
+          h3 · &nbsp;&nbsp;Final Result&nbsp;&nbsp; ·
+
+        p In order to get a better user experience for interaction and usability, I switched all previous prototype pages from InVision to Proto.io. The reason is that InVision uses static wireframes to prototype, but Proto.io helps to create a fully interactive prototype that feels more real.
+
+        p After I update the prototype in Proto.io, the couples that were interviewed at the beginning of the project were asked to try out the prototype and asked for feedback. This is user test, checking if the designed features can actually help them to achieve their goals. With the feedback, I modified some interaction preferences in the prototype.
+
+    // Reflection section
+    section(class="body_container dark")
+      section#reflection
+        div(class="center_align")
+          h3 · &nbsp;&nbsp;My Reflection&nbsp;&nbsp; ·
+
+        p At the beginning of the project, I have suggested building an app for couples only, I have tried out a few relationship apps, and it does not fully fulfil my requirements of managing information for my relationship. So I wish to build a customized app to be used by different couples, allowing the couples to build up and manage a private space belonging to the two only.
+
+        p For this project, I discovered it is very constrained to design for the end users when three-quarters of the team also fit in the end user criteria. This is very problematic, while the goal for the end users and the designers may differ. So I concluded that it is very important to set the right mind while designing for end users. As designers, we should focus on the end user’s goal, and do not assume for the users.
+
+
+
+    include preProcess/projectList.pug
+
+    include preProcess/footer.pug

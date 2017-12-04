@@ -1,40 +1,21 @@
 - var pageTitle = "Eva Li | Panwiberry"
 - var logo = "../"
+- var projectCover = "panwiberry_cover"
+- var projectName = "Panwiberry"
+- var projectDescription = "Planning and managing App enhancing member commuication, relationship and motivation."
+- var problem = "The members of Panwiberry dance crew lacks communication and practice motivations, which drops their team spirits for performance."
+- var solution = "A mobile App to aid the members' form of communication, boost members' morality and motivation in order to improve their relationship and team spirits for a better dance performance."
+- var role = "User research, User Interviews, User Analysis, Persona Creation, Cultural Probe Creation, User Journey Flow, Wireframing, and Prototyping."
+- var tool = "MS Word (Research Documentation &amp; Analysis), Adobe Illustrator CC (Research posters include Analysis, Cultural Probe, User Flow), and Proto.io (Wireframes &amp; Prototype)."
 
 doctype html
 html(lang="en")
   include preProcess/head.pug
 
   body
-    // Header
-    header
-      nav(id="topNav" class="nav_container")
-        // Personal Logo
-        div(class="float_left")
-          a(href="index.html"): img(src="_work/img/logo.png" alt="Eva Li's Logo" class="logo")
+    include preProcess/projectHeader.pug
 
-          a(href="index.html"): h1 Eva Li
-        // Personal Logo
-
-        // Site navigation tabs
-        div(class="float_right")
-
-          a(href="index.html#home") HOME
-
-          a(href="index.html#portfolio" class="current_page") PORTFOLIO
-
-          a(href="index.html#about") ABOUT
-        // Site navigation tabs
-    // Header END HERE
-
-    // Page Cover
-    section#panwiberry(class="big_image_header")
-      div(class="background_image panwiberry_cover")
-
-      div(class="cover_text center_align")
-        p(class="cover_title") Panwiberry
-        p(class="cover_info") Planning and managing App enhancing member commuication, relationship and motivation.
-    // Page Cover END HERE
+    include preProcess/projectCover.pug
 
 
     // Side Anchor Menu
@@ -67,22 +48,8 @@ html(lang="en")
       section#project-overview(class="first_piece_content")
         div
           include preProcess/squareDeco.pug
-          div(class="center_align")
-            h2 PROJECT OVERVIEW
-            div(class="bottom_border")
 
-          // Project Brief
-          h3 Problem:
-          p The members of Panwiberry dance crew lacks communication and practice motivations, which drops their team spirits for performance.
-
-          h3 Solution:
-          p A mobile App to aid the members' form of communication, boost members' morality and motivation in order to improve their relationship and team spirits for a better dance performance.
-
-          h3 My Roles:
-          p User research, User Interviews, User Analysis, Persona Creation, Cultural Probe Creation, User Journey Flow, Wireframing, and Prototyping.
-
-          h3 Tools Used:
-          p MS Word (Research Documentation &amp; Analysis), Adobe Illustrator CC (Research posters include Analysis, Cultural Probe, User Flow), and Proto.io (Wireframes &amp; Prototype).
+          include preProcess/projectOverview.pug
 
 
     // Participant Ethnography Data Collection section
@@ -288,38 +255,6 @@ html(lang="en")
 
 
 
-    // Other Projects section
-    section(class="body_container light")
-      section#other-projects
-        div(class="center_align")
-          h3 · &nbsp;&nbsp;Other Projects&nbsp;&nbsp; ·
-
-        div(class="project_list")
-          div(class="project_container")
-            // 1
-            div(class="project_item")
-              figure(class="overlay_container")
-                a(href="panwiberry.html")
-                  img(src="_work/img/panwiberry/panwiberry.png" alt="overview of Panwiberry Dance Club app")
-
-              div(class="project_title")
-                a(href="panwiberry.html") Panwoberry App (UX/UI Design)
-              div(class="project_info")
-                p A planning and managing mobile App enhancing member communication, relationship and motivation.
-                a(href="panwiberry.html" title="panwiberry link" class="inText_Link") Read More &#8594;
-
-            // 2
-            div(class="project_item")
-              figure(class="overlay_container")
-                a(href="duet.html")
-                  img(src="_work/img/duet/duet.jpg" alt="overview of Panwiberry Dance Club app")
-
-              div(class="project_title")
-                a(href="duet.html") Duet App (UX/UI Design)
-              div(class="project_info")
-                p A distance relationship managing App to manage, maintain and improve relationship.
-                a(href="duet.html" title="duet link" class="inText_Link") Read More &#8594;
-
-
-
+    include preProcess/projectList.pug
+    
     include preProcess/footer.pug
