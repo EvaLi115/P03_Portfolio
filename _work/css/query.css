@@ -26,6 +26,10 @@
 		width: auto;
 		margin: 0 1em;
 	}
+
+	img {
+		width: 100%;
+	}
 }
 
 @media (max-width: 41em) {

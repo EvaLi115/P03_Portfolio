@@ -1,11 +1,15 @@
 .about-cover {
   position: relative;
-  background: #D8CEC1;
+  background: linear-gradient(#D8CEC1, #C2B2BD);
+  background: -webkit-linear-gradient(#D8CEC1, #C2B2BD);
+  background: -moz-linear-gradient(#D8CEC1, #C2B2BD);
   height: 100vh;
 }
 
 .svg-img {
-  background: #D8CEC1;
+  background: linear-gradient(#D8CEC1, #C2B2BD);
+  background: -webkit-linear-gradient(#D8CEC1, #C2B2BD);
+  background: -moz-linear-gradient(#D8CEC1, #C2B2BD);
   height: 100%;
   max-width: 100%;
   margin: auto;
