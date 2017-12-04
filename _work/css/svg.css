@@ -169,7 +169,7 @@ text.home_info {
 }
 
 
-svg.svg-img g.head {
+svg.svg-img g.front-head {
   -moz-animation: head-move 15s infinite;
   -webkit-animation: head-move 15s infinite;
   animation: head-move 15s infinite;
@@ -185,36 +185,36 @@ svg.svg-img g.head {
 
 @-moz-keyframes head-move {
   0% {
-    -moz-transform: rotate(-5deg);
+    -moz-transform: rotate(0deg);
   }
   30% {
-    -moz-transform: rotate(1deg);
+    -moz-transform: rotate(-2deg);
   }
   50% {
-    -moz-transform: rotate(1deg);
+    -moz-transform: rotate(-2deg);
   }
   80% {
-    -moz-transform: rotate(5deg);
+    -moz-transform: rotate(1deg);
   }
   100% {
-    -moz-transform: rotate(-5deg);
+    -moz-transform: rotate(0deg);
   }
 }
 @-webkit-keyframes head-move {
   0% {
-    -webkit-transform: rotate(-5deg);
+    -webkit-transform: rotate(0deg);
   }
   30% {
-    -webkit-transform: rotate(1deg);
+    -webkit-transform: rotate(-2deg);
   }
   50% {
-    -webkit-transform: rotate(1deg);
+    -webkit-transform: rotate(-2deg);
   }
   80% {
-    -webkit-transform: rotate(-5deg);
+    -webkit-transform: rotate(1deg);
   }
   100% {
-    -webkit-transform: rotate(-5deg);
+    -webkit-transform: rotate(0deg);
   }
 }
 @keyframes head-move {
@@ -222,10 +222,10 @@ svg.svg-img g.head {
     transform: rotate(0deg);
   }
   30% {
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
   }
   50% {
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
   }
   80% {
     transform: rotate(1deg);
