@@ -34,7 +34,7 @@ text.home_info {
   ------------------------------------------------------------ Animation
 */
 /*about cover svg eye blink*/
-section.about-cover .left_eye, section.about-cover  .right_eye {
+div.about-cover .left_eye, div.about-cover .right_eye {
   -webkit-animation: blink 5s infinite;
   -moz-animation: blink 5s infinite;
   animation: blink 5s infinite;
@@ -74,7 +74,7 @@ section.about-cover .left_eye, section.about-cover  .right_eye {
 
 
 /*profile image eye blink*/
-section.body_container .left_eye, section.body_container .right_eye {
+div.home_body_container g.left_eye, div.home_body_container g.right_eye {
   -webkit-animation: profile-blink 8s infinite;
   -moz-animation: profile-blink 8s infinite;
   animation: profile-blink 8s infinite;
