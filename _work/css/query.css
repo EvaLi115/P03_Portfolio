@@ -15,16 +15,20 @@
 	}
 }
 
-@media (max-width: 62em) {
+@media (max-width: 65em) {
 	.side-nav {
     display: none;
   }
 }
 
 @media (max-width: 48em) {
-	.nav_container, .body_container section {
+	.nav_container, .home_body_container section, .body_container section {
 		width: auto;
 		margin: 0 1em;
+	}
+
+	.nav_container_styleguide {
+		margin: 0;
 	}
 
 	img {
@@ -52,9 +56,13 @@
   }
 }
 
-@media (max-width: 31em) {
+@media (max-width: 35em) {
 	.nav_container a {
 		margin-left: 2%;
+	}
+
+	.sub_nav {
+		display: none;
 	}
 
 	.project_item {

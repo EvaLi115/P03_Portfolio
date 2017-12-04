@@ -78,7 +78,7 @@ figure {
 }
 
 img {
-  width: 60%;
+  width: 65%;
   height: auto;
 }
 
@@ -99,7 +99,7 @@ figure.img_resize {
 }
 
 figcaption {
-  font-size: 0.85em;
+  font-size: 0.9em;
 }
 
 .bottom_border {
@@ -243,13 +243,17 @@ header {
 
 .page_Heading {
   font-size: 2em;
-  margin: 2em auto;
+  margin: 2em auto 0.5em;
 }
 
-.body_container section {
+.home_body_container section, .body_container section {
 	width: 70%;
 	margin: auto;
 	padding: 60px 0;
+}
+
+.body_container section {
+	width: 45em;
 }
 
 code {
@@ -258,18 +262,18 @@ code {
   padding: 1.25em;
   margin-bottom: 1em;
   background-color: #FDFEFF;
-  border: 0.1em solid #9CCAD6;
+  border: 0.1em solid #6A5A98;
   border-left-width: thick;
 }
 
 /*inText_Link*/
 .inText_Link {
-  color: #FFF;
+  color: #9CCAD6;
   transition: color  0.5s ease;
 }
 
 .inText_Link:hover, .inText_Link:focus {
-  color: #12667C;
+  color: #8D9FAA;
 }
 
 /*main navigation in styleguide*/
@@ -278,7 +282,7 @@ code {
   height: 63px;
   z-index: 1000;
   padding: 0 2%;
-  background: #FFF;
+  background: #C2B2BD;	;
   overflow: hidden;
   transition: background-color  0.5s ease;
 }
@@ -297,22 +301,24 @@ button, .button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  transition: color 0.5s, background-color 0.5s, ease;
+  transition: all 0.5s ease;
 }
 
 .button_fill {
-  background-color: #FFF;
+  background-color: #9CCAD6;
   color: #FFF;
 }
 
 .button_unfill {
   background-color: transparent;
   color: #EA8663;
+	border: 1px solid #EA8663;
 }
 
 .button_fill:hover, .button_fill:focus, .button_unfill:hover, .button_unfill:focus  {
-  background-color: #FFF;
+  background-color: #9CCAD6;
   color: #FFF;
+	border: 1px solid #9CCAD6;
 }
 
 
@@ -489,7 +495,11 @@ button, .button {
 .project_item {
 	display: inline-block;
 	max-width: 48%;
-	margin: 3em 0em;
+	margin: 2em 0em;
+}
+
+.project_title {
+	margin-top: 0.25em;
 }
 
 .project_title a, .project_info a {
@@ -500,11 +510,15 @@ button, .button {
 
 .project_info p, .project_info a {
 	font-size: 0.85em;
-	margin-bottom: 0;
+	margin: 0.5em 0 0;
 }
 
-.project_info a, .project_item a:hover, .project_item a:focus{
-	color: #FFF;
+.project_info a {
+	color: #9CCAD6;
+}
+
+.project_item a img {
+	width: 100%;
 }
 /*
 ------------------------------------------------------------------------- Project List Style END HERE
