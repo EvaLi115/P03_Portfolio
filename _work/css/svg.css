@@ -75,9 +75,9 @@ div.about-cover .left_eye, div.about-cover .right_eye {
 
 /*profile image eye blink*/
 div.home_body_container g.left_eye, div.home_body_container g.right_eye {
-  -webkit-animation: profile-blink 8s infinite;
-  -moz-animation: profile-blink 8s infinite;
-  animation: profile-blink 8s infinite;
+  -webkit-animation: profile-blink 4s infinite;
+  -moz-animation: profile-blink 4s infinite;
+  animation: profile-blink 4s infinite;
 
   -webkit-transform-origin: 50%;
   -moz-transform-origin: 50%;
