@@ -26,46 +26,19 @@ text.home_info {
 	font-size: 1.13em;
 }
 
-/*animation*/
-.left_eye, .right_eye {
-  -moz-animation: blink 5s infinite;
+/*
+  ------------------------------------------------------------ Animation
+*/
+/*about cover svg eye blink*/
+section.about-cover .left_eye, section.about-cover  .right_eye {
   -webkit-animation: blink 5s infinite;
+  -moz-animation: blink 5s infinite;
   animation: blink 5s infinite;
 
-  -moz-transform-origin: 50%;
   -webkit-transform-origin: 50%;
+  -moz-transform-origin: 50%;
   transform-origin: 50%;
 }
-
-/*Standard*/
-@keyframes blink {
-  /*code reference:https://codepen.io/bfred-it/pen/RNGOQW*/
-  97% {
-    transform: none;
-    animation-timing-function: ease-in;
-  }
-  98% {
-    transform: translateY(3px) scaleY(0.1)
-  }
-  100% {
-    animation-timing-function: ease-out;
-  }
-}
-
-/*Firefox*/
-@-moz-keyframes blink {
-  97% {
-    -moz-transform: none;
-    -moz-animation-timing-function: ease-in;
-  }
-  98% {
-    -moz-transform: translateY(3px) scaleY(0.1)
-  }
-  100% {
-    -moz-animation-timing-function: ease-out;
-  }
-}
-
 /*Chrome, Opera, Safari*/
 @-webkit-keyframes blink {
   97% {
@@ -79,142 +52,217 @@ text.home_info {
     -webkit-animation-timing-function: ease-out;
   }
 }
-
-#left-hand {
-  -moz-animation: left-hand-move  5s infinite;
-  -webkit-animation: left-hand-move  5s infinite;
-  animation: left-hand-move  5s infinite;
-
-  -moz-transform-origin: center 80%;
-  -webkit-transform-origin: center 80%;
-  transform-origin: center 80%;
-}
-
-@-moz-keyframes left-hand-move {
-  0% {
-    -moz-transform: rotate(-2deg);
+/*Firefox*/
+@-moz-keyframes blink {
+  97% {
+    -moz-transform: none;
+    -moz-animation-timing-function: ease-in;
   }
-  50% {
-    -moz-transform: rotate(2deg);
+  98% {
+    -moz-transform: translateY(75px) scaleY(0.1);
   }
   100% {
-    -moz-transform: rotate(-2deg);
+    -moz-animation-timing-function: ease-out;
   }
+}
+
+
+
+
+/*profile image eye blink*/
+section.body_container .left_eye, section.body_container .right_eye {
+  -webkit-animation: profile-blink 8s infinite;
+  -moz-animation: profile-blink 8s infinite;
+  animation: profile-blink 8s infinite;
+
+  -webkit-transform-origin: 50%;
+  -moz-transform-origin: 50%;
+  transform-origin: 50%;
+}
+/*Chrome, Opera, Safari*/
+@-webkit-keyframes profile-blink {
+  97% {
+    -webkit-transform: none;
+    -webkit-animation-timing-function: ease-in;
+  }
+  98% {
+    -webkit-transform: translateY(3px) scaleY(0.1)
+  }
+  100% {
+    -webkit-animation-timing-function: ease-out;
+  }
+}
+/*Firefox*/
+@-moz-keyframes profile-blink {
+  97% {
+    -moz-transform: none;
+    -moz-animation-timing-function: ease-in;
+  }
+  98% {
+    -moz-transform: translateY(10px) scaleY(0.1);
+  }
+  100% {
+    -moz-animation-timing-function: ease-out;
+  }
+}
+
+
+
+
+/*hands*/
+#left-hand {
+  -webkit-animation: left-hand-move  10s infinite;
+  -moz-animation: left-hand-move  10s infinite;
+  animation: left-hand-move  10s infinite;
+
+  -webkit-transform-origin: center 80%;
+  -moz-transform-origin: center 80%;
+  transform-origin: center 80%;
 }
 @-webkit-keyframes left-hand-move {
   0% {
-    -webkit-transform: rotate(-2deg);
+    -webkit-transform: rotate(0deg);
   }
   50% {
-    -webkit-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg) translate(0, -5px);
+  }
+  80% {
+    -webkit-transform: translate(-5px, 0);
   }
   100% {
-    -webkit-transform: rotate(-2deg);
+    -webkit-transform: rotate(0deg);
   }
 }
-@keyframes left-hand-move {
+@-moz-keyframes left-hand-move {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  50% {
+    -moz-transform: rotate(2deg) translate(0, -5px);
+  }
+  80% {
+    -moz-transform: rotate(2deg) translate(-5px, 0);
+  }
+  100% {
+    -moz-transform: rotate(0deg);
+  }
+}
+/*@keyframes left-hand-move {
   0% {
     transform: rotate(-2deg);
   }
   50% {
-    transform: rotate(2deg);
+    transform: rotate(2deg) translate(0, -5px);
+  }
+  80% {
+    transform: translate(-5px, 0);
   }
   100% {
     transform: rotate(-2deg);
   }
-}
+}*/
 
 #right-hand {
-  -moz-animation: right-hand-move 3s infinite;
-  -webkit-animation: right-hand-move 3s infinite;
-  animation: right-hand-move 3s infinite;
+  -webkit-animation: right-hand-move 10s infinite;
+  -moz-animation: right-hand-move 10s infinite;
+  animation: right-hand-move 10s infinite;
 
-  -moz-transform-origin: center 65%;
   -webkit-transform-origin: center 65%;
+  -moz-transform-origin: center 65%;
   transform-origin: center 65%;
-}
-
-@-moz-keyframes right-hand-move {
-  0% {
-    -moz-transform: rotate(0deg);
-  }
-  50% {
-    -moz-transform: rotate(1deg);
-  }
-  100% {
-    -moz-transform: rotate(0deg);
-  }
 }
 @-webkit-keyframes right-hand-move {
   0% {
     -webkit-transform: rotate(0deg);
   }
   50% {
-    -webkit-transform: rotate(1deg);
+    -webkit-transform: rotate(10deg) translate(0, -5px);
+  }
+  80% {
+    -webkit-transform: translate(-5px);
   }
   100% {
     -webkit-transform: rotate(0deg);
   }
 }
-@keyframes right-hand-move {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(1deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-
-svg.svg-img g.front-head {
-  -moz-animation: head-move 15s infinite;
-  -webkit-animation: head-move 15s infinite;
-  animation: head-move 15s infinite;
-
-  -moz-transform-origin: 50%;
-  -webkit-transform-origin: 50%;
-  transform-origin: center 60%;
-
-  -moz-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-@-moz-keyframes head-move {
+@-moz-keyframes right-hand-move {
   0% {
     -moz-transform: rotate(0deg);
   }
-  30% {
-    -moz-transform: rotate(-2deg);
-  }
   50% {
-    -moz-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg)  translate(0, -5px);
   }
   80% {
-    -moz-transform: rotate(1deg);
+    -moz-transform: rotate(2deg) translate(-3px, 0);
   }
   100% {
     -moz-transform: rotate(0deg);
   }
+}
+/*@keyframes right-hand-move {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg) translate(0, -5px);
+  }
+  80% {
+    transform: translate(-5px);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}*/
+
+
+
+
+/*head moving animation*/
+svg.svg-img g.front-head, svg.svg-img g.back_hair {
+  -webkit-animation: head-move 10s infinite;
+  -moz-animation: head-move 10s infinite;
+  animation: head-move 10s infinite;
+
+  -webkit-transform-origin: 60%;
+  -moz-transform-origin: 60%;
+  transform-origin: center 60%;
+
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
 }
 @-webkit-keyframes head-move {
   0% {
     -webkit-transform: rotate(0deg);
   }
   30% {
-    -webkit-transform: rotate(-2deg);
+    -webkit-transform: rotate(-1.4deg);
   }
   50% {
-    -webkit-transform: rotate(-2deg);
+    -webkit-transform: rotate(-1.4deg);
   }
   80% {
-    -webkit-transform: rotate(1deg);
+    -webkit-transform: rotate(1.55deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
+  }
+}
+@-moz-keyframes head-move {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  30% {
+    -moz-transform: rotate(-1.4deg);
+  }
+  50% {
+    -moz-transform: rotate(-1.4deg);
+  }
+  80% {
+    -moz-transform: rotate(1.55deg);
+  }
+  100% {
+    -moz-transform: rotate(0deg);
   }
 }
 @keyframes head-move {
@@ -222,57 +270,63 @@ svg.svg-img g.front-head {
     transform: rotate(0deg);
   }
   30% {
-    transform: rotate(-1deg);
+    transform: rotate(-1.4deg);
   }
   50% {
-    transform: rotate(-1deg);
+    transform: rotate(-1.4deg);
   }
   80% {
-    transform: rotate(1deg);
+    transform: rotate(1.55deg);
   }
   100% {
     transform: rotate(0deg);
   }
 }
 
-.bloom {
-  animation-name: bloom;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  transform-origin: 50%;
-}
 
-@keyframes bloom {
+
+
+
+/*flower blooming animation in Chrome, Opera, Safari only*/
+g.bloom, g.big-flower {
+  -webkit-animation: bloom 15s infinite;
+  -moz-animation: none;
+
+  -webkit-transform-origin: center;
+  -moz-transform-origin: 0;
+}
+/*do this animation in Chrome, Opera, Safari only*/
+@-webkit-keyframes bloom {
   0% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
   }
   50% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
   }
   70% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
   }
   100% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
   }
 }
 
 .big-flower {
-  animation-name: big-bloom;
-  animation-duration: 18s;
+  -webkit-animation: big-bloom 18s infinite;
+  -moz-animation: none;
 }
-
+/*do this animation in Chrome, Opera, Safari only*/
 @keyframes big-bloom {
   0% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
   }
   50% {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
   }
   70% {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
   }
   100% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
   }
 }
